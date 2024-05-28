@@ -1,10 +1,6 @@
-let img = document.createElement("img")
-let img1 = document.createElement("img")
-let div2 = document.createElement("div")
+const input1 = document.createElement("input")
+const input2 = document.createElement("input")
 
-div2.textContent = "new"
-
-let styleSheet = document.createElement("style")
-// barcha stylelar uchun
-
-export {img,div2,img1,styleSheet}
+input1.style.borderRadius= "5px"
+input2.style.borderRadius= "5px"
+export {input1 , input2}

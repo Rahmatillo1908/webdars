@@ -1,15 +1,12 @@
-import { styles } from "./style"
-import { img,img1,div2,styleSheet } from "./Text"
+import "./style.css"
 
-let body = document.querySelector("body")
+const navItems = document.querySelectorAll(".nav-item");
 
-styleSheet.innerText = styles
-body.appendChild(styleSheet)
-
-
-body.appendChild(img)
-body.appendChild(img1)
-body.appendChild(div2)
-
-
-//xar yangilangandan keyin: npm run build
+navItems.forEach((navItem, i) => {
+  navItem.addEventListener("click", () => {
+    navItems.forEach((item, j) => {
+      item.className = "nav-item";
+    });
+    navItem.className = "nav-item active";
+  });
+});
